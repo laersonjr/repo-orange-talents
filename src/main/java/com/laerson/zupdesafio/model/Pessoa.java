@@ -37,7 +37,7 @@ public class Pessoa {
 	@NotNull(message = "CPF não pode ser nulo")
 	@CPF(message = "CPF inválido")
 	@Column(unique = true)
-	@Size(message = "CPF deve contar 11 caracteres", min = 11, max = 11)
+	@Size(message = "CPF deve conter 11 caracteres", min = 11, max = 11)
 	private String cpf;
 	
 	@NotNull(message = "Data de nascimento não pode ser nula")
