@@ -42,7 +42,7 @@ public class Pessoa {
 	
 	@NotNull(message = "Data de nascimento não pode ser nula")
 	@JsonFormat(pattern = "dd/MM/yyyy")
-	@Column(name = "data_nascimento", unique = true)
+	@Column(name = "data_nascimento")
 	private LocalDate dataNascimento;
 	
 	public String getNome() {

@@ -6,5 +6,7 @@ CREATE TABLE pessoa (
 	data_nascimento DATE
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 	
-	INSERT INTO pessoa (nome, cpf, email, data_nascimento) values ('Laerson Castro', '00775627470', 'laersonjr@gmail.com', '2020-12-30');
-	INSERT INTO pessoa (nome, cpf, email, data_nascimento) values ('Laerson Castro Novo', '12345678911', 'laersonjr@hotmail.com', '2020-12-30');
+	INSERT INTO pessoa (nome, cpf, email, data_nascimento) values
+	 ('Laerson Castro', '00100200304', 'laersonjr@gmail.com', '2021-01-02');
+	INSERT INTO pessoa (nome, cpf, email, data_nascimento) values
+	 ('Laerson Castro Novo', '12345678911', 'laersonjr@hotmail.com', '2021-01-02');

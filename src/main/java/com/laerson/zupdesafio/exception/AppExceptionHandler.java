@@ -35,7 +35,8 @@ public class AppExceptionHandler extends ResponseEntityExceptionHandler {
 	@ExceptionHandler({DataIntegrityViolationException.class})
 	public ResponseEntity<Object> handleDataIntegrityViolationException(DataIntegrityViolationException ex,
 			WebRequest request) {
-		String menssagemUsuario = messageSource.getMessage("recurso.em.duplicidade", null, LocaleContextHolder.getLocale());
+		String menssagemUsuario = messageSource.getMessage("recurso.em.duplicidade", null,
+				LocaleContextHolder.getLocale());
 		List<Erro> erros = Arrays.asList(new Erro(menssagemUsuario));
 		return handleExceptionInternal(ex, erros, new HttpHeaders(), HttpStatus.BAD_REQUEST, request);
 	}
